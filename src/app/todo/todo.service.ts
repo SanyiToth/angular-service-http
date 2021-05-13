@@ -26,7 +26,7 @@ export class TodoService {
     return this.http.post<Todo>(TodoService.API_URL, user);
   }
 
-
+//update
   patchTodo(id: number, user: Todo): Observable<Todo> {
     return this.http.patch<Todo>(TodoService.API_URL + `/${id}`, user);
   }
@@ -41,11 +41,6 @@ export class TodoService {
   deleteTodo(id: number): Observable<any> {
     return this.http.delete(TodoService.API_URL + `/${id}`);
   }
-
-
-
-
-
 
 
 }
